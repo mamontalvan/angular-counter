@@ -11,7 +11,7 @@ export class AddCharacterComponent {
   @Output()
   public eventEmiterNewCharacter: EventEmitter<ICharacter> = new EventEmitter();
 
-  public character: ICharacter = { name: 'Test Maria', power: 1 }
+  public character: ICharacter = { name: 'Goku', power: 100 }
 
   addCharacter():void {
     console.log('ADD-CHARACTER Component',this.character);
