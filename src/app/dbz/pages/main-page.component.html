@@ -1,0 +1,12 @@
+<h1>Main Page Component</h1>
+<hr>
+<div class="row">
+  <div class="col">
+    <dbz-list
+        (eventEmitIndexCharacter)="onDeleteCharacter($event)"
+        [characterList]="characters"></dbz-list>
+  </div>
+  <div class="col">
+    <dbz-add-character (eventEmiterNewCharacter)="OnAddCharacter($event)"></dbz-add-character>
+  </div>
+</div>
